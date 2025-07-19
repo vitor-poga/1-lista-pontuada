@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &altura);
 
     if (altura < 0) {
-        printf("A altura deve ser um valor não-negativo.\n");
+        printf("A altura deve ser um valor não negativo.\n");
         return 1;
     }
 

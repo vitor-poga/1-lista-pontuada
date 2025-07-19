@@ -2,8 +2,7 @@
 
 int main(){
 
-    
-    int altura, espaco, escolhaTriangulo;
+    int altura, escolhaTriangulo;
 
     printf("Digite aqui a altura do triangulo: "); 
     scanf ("%d", &altura);
@@ -13,34 +12,33 @@ int main(){
 
     if (escolhaTriangulo == 1)
     {
-
         for (int i = 0; i < altura; i++)
-    {
-        for (int z = 0; z < i; z++)
         {
-            printf("*");
+            for (int z = 0; z <= i; z++)
+            {
+                printf("*");
+            }
+            printf("\n");
         }
-        printf("\n");
-    }
     
-
     } else if (escolhaTriangulo == 2)
     {
        for (int i = 0; i < altura; i++)
        {
-        for (int z = 0; z < altura; z++)
-        {
-            printf("");
-        }
-        
+            for (int z = 0; z <= i; z++)
+            {
+                if (z == 0 || z == i || i == altura - 1) {
+                    printf("*");
+                } else {
+                    printf(" ");
+                }
+            }
+            printf("\n");
        }
-       
         
     } else {
-        printf ("Escolha uma opcao valida");
+        printf ("Escolha uma opcao valida\n");
     }
-
-
 
     return 0;
 }
